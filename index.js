@@ -18,7 +18,9 @@ Do the following:
    HINT: no function required
 */
 
-
+let votingAge = '18';
+if (votingAge >= 18){
+}
 
 /*
 Task 1b - Values
@@ -31,9 +33,14 @@ Do the following:
    HINT: no function required
 */
 
+let varVarA = 'AAA';
+let varVarB = 'BBB';
 
-
-
+if(varVarB === 'BBB'){
+  varVarA = 'CCC';
+  //return varVarA;
+  console.log(varVarA);
+}
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -46,7 +53,10 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+let supaString = '1999';
+supaString.valueOf();  
+//return supaString;
+console.log(supaString);
 
 
 /*
