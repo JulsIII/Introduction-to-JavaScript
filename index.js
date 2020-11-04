@@ -158,11 +158,51 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function game(user, computer){
-    /*add your code here*/
+
+// let computer = Math.random();
+// let user = Math.random();
+
+// function game(user, computer){
+//     if(computer < 0.33){
+//       computer = 'rock';
+//     }else if(computer < 0.66){
+//       computer = 'paper';
+//     }else if (computer <= 1){
+//       computer = 'scissors';
+//     }
+//     if(user === 'rock' && computer === 'scissors' || user === 'paper' && computer === 'rock' || user === 'scissors' && computer === 'paper'){
+//       return 'you win!';
+//     }else if(computer === 'rock' && user=== 'scissors' || computer === "paper" && user === 'rock' || computer === 'scissors' && user 'paper'){
+//       return 'you lose!';
+//     }else if(computer === user){
+//       return "It's a Tie";
+//     }
+// }
+// console.log(game(user, computer));
+function makeChoice(num) {
+  if (Math.ceil(num*3) === 1) {
+    return "rock";
+  } else if (Math.ceil(num*3) === 2) {
+    return "paper";
+  } else {
+    return "scissors";
+  }
 }
-  
-  
+var computerNumber = makeChoice(Math.random());
+var userNumber = makeChoice(Math.random());
+function game(user, computer) {
+  if (user === computer) {
+    return "it's a tie";
+  } else if ((user === "scissors" && computer === "paper") ||
+            (user === "paper" && computer === "rock") ||
+            (user === "rock" && computer === "scissors")) {
+              return "you win!";
+  } else {
+    return "you lose!";
+  }
+} 
+game(computerNumber, userNumber);
+console.log(game(computerNumber, userNumber));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
