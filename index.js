@@ -266,13 +266,23 @@ Using the grade function below do the following:
    60-69 =  D 
    below 60 = F
 */
-  
-function grade(/*add your code here*/){
-    /*add your code here*/
+
+function grade(score){
+    if(score >= 90 && score <= 100){
+      return 'you got a A';
+    }else if(score >= 80 && score <= 89){
+      return 'you got a B';
+    }else if(score >= 70 && score <= 79){
+      return 'you got a C';
+    }else if(score >= 60 && score <= 69){
+      return 'you got a D';
+    }else if(score < 60){
+      return'you got a F';
+    }
   }
+
   
-  
-  
+   
   
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
